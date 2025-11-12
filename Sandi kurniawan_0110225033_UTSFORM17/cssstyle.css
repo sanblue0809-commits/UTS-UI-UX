@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+   
+    font-weight: 500; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; 
+}
+
+.form-group label {
+    width: 150px; 
+    min-width: 150px;
+    
+    font-weight: **bold**; 
+    margin-right: 10px;
+}
+
+.form-group input[type="text"], 
+.form-group select,
+.form-group textarea {
+    flex-grow: 1; 
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.form-group select {
+    width: 150px; 
+    flex-grow: 0;
+}
+
+.form-group button {
+    background-color: #ddd;
+    border: 1px solid #999;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+   
+    font-weight: **bold**; 
+}
+
+
+.preview-item {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.placeholder {
+    width: 150px;
+    height: 100px;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0; 
+}
+
+.placeholder::before, .placeholder::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.placeholder::before {
+    transform: rotate(45deg);
+}
+
+.placeholder::after {
+    transform: rotate(-45deg);
+}
+
+.description {
+    flex-grow: 1;
+}
+
+.description h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: **bolder**; 
+}
+
+.description p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    background: repeating-linear-gradient(
+        to right,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 5,0; 
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
